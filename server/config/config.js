@@ -12,10 +12,10 @@ let urlDB
 // ==================================
 // Base de datos
 // ==================================
-// if (process.env.NODE_ENV === 'dev') {
-//     urlDB = 'mongodb://localhost:27017/cafe'
-// } else {
-urlDB = 'mongodb+srv://cafe-user:123456A@cluster0-lliug.mongodb.net/cafe?retryWrites=true&w=majority'
-    // }
+if (process.env.NODE_ENV === 'dev') {
+    urlDB = 'mongodb://localhost:27017/cafe'
+} else {
+    urlDB = 'mongodb+srv://cafe-user:123456A@cluster0-lliug.mongodb.net/cafe?retryWrites=true&w=majority'
+}
 
 process.env.URLDB = urlDB
